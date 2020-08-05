@@ -1,0 +1,113 @@
+    *{ 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    } 
+    .container{ 
+    width: 100%; 
+    margin: 0 auto; 
+    } 
+    @font-face{ 
+    font-family: "Lobster-Regular"; 
+    src:url(../fonts/Lobster-Regular.ttf) format("truetype"); 
+    } 
+    @font-face{ 
+    font-family: "Roboto-Regular"; 
+    src:url(../fonts/Roboto-Regular.ttf) format("truetype"); 
+    } 
+    .logo{ 
+    font-family: "Lobster-Regular"; 
+    color: rgb(177, 27, 0); 
+    font-size: 48pt; 
+    } 
+    body{ 
+    font-family: "Roboto-Regular" 
+    } 
+    header{ 
+    min-height: 300px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    } 
+    ul.menu{ 
+    display: flex; 
+    margin-top: 50px; 
+    } 
+    li.menu-item{ 
+    margin-left: 40px; 
+    list-style: none; 
+    } 
+    li.menu-item>a{ 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    color: black; 
+    } 
+    li.menu-item>a:hover::before, li.menu-item>a:hover::after{ 
+    content: " - "; 
+    } 
+    li.menu-item:hover{ 
+    font-weight: bold; 
+    } 
+    .row{ 
+    display: flex; 
+    } 
+    #sale { 
+    background-image: url(../img/sale.png); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 500px; 
+    /* background-attachment: fixed; паролакс скролин эффект*/ 
+    } 
+    .element-menu { 
+    width: 40%; 
+    box-shadow: 0 4px 8px 10px rgba(0,0,0,0.2); 
+    /* border: gray 2px solid; */ 
+    border-radius: 10px; 
+    padding: 5px; 
+    margin: 5%; 
+    transition: 0.3s; 
+    } 
+    .food { 
+    width: 100%; 
+    } 
+    /* .title-el-menu{ 
+    position: absolute; 
+    display: none; 
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    }  */
+    /* .blure{ 
+    position: relative; 
+    } */ 
+    .element-menu:hover { 
+    box-shadow: 0 6px 14px 10px rgba(0,0,0,0.2); 
+    } 
+    .food:hover { 
+    filter: blur(2px); 
+    } 
+    .soup-menu{ 
+    display: flex; 
+    } 
+    .element-soup{ 
+    width: 40%; 
+    box-shadow: 0 4px 8px 10px rgba(0,0,0,0.2); 
+    /* border: gray 2px solid; */ 
+    border-radius: 10px; 
+    padding: 5px; 
+    margin: 5%; 
+    transition: 0.3s; 
+    } 
+    .element-soup:hover { 
+    box-shadow: 0 6px 14px 10px rgba(0,0,0,0.2); 
+    }
+    .txt-about{
+        width: 40%;
+    }
+    .about{
+        background-color: black;
+    }
+    .txt-about, .title-about{
+        color: white;
+    }
